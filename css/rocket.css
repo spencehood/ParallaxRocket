@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+body {
+  background: #B5E5F5;
+  margin: 0;
+  padding: 0;
+  height: 4000px;
+  overflow-x: hidden; 
+}
+#ship {
+  text-align: center;
+  width: 140px;
+  position: fixed;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 20px;
+  -webkit-transform: rotate(0deg);
+}
+#shipwings {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 70px 140px 70px;
+  border-color: transparent transparent #E8CC9D transparent;
+  z-index: 15;
+  position: absolute;
+  top: 15px;
+}
+#shiptop {
+  width: 40px;
+  height: 40px;
+  background: #A3D100;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 20;
+  position: relative;
+  margin: 0 auto;
+}
+#shipshadow {
+  width: 20px;
+  height: 180px;
+  position: absolute;
+  background: rgba(0,0,0,0.1);
+  border-top-left-radius: 20px;
+  top: 0px;
+  left: 50px;
+  z-index: 21;
+}
+#shipbody {
+  width: 40px;
+  height: 140px;
+  background: #FFE9BF;
+  position: relative;
+  z-index: 20;
+  margin: 0 auto;
+}
+.shipbottom {
+  width: 10px;
+  height: 40px;
+  background: #799C00;
+  position: absolute;
+  bottom: -15px;
+}
+#sbleft {
+  left: -5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#sbmiddle {
+  left: 15px;
+  bottom: -25px;
+  height: 50px;
+  border-radius: 10px;
+}
+#sbright {
+  right: -5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#stripe1 {
+  position: absolute;
+  background: #8DB500;
+  width: 40px;
+  height: 5px;
+  top: 100px;
+}
+#stripe2 {
+  position: absolute;
+  background: #8DB500;
+  width: 40px;
+  height: 20px;
+  top: 75px;
+}
+#stripe3 {
+  position: absolute;
+  background: #8DB500;
+  width: 40px;
+  height: 5px;
+  top: 20px;
+}
+
+/*********************************/
+
+#flamebody {
+  width: 30px;
+  height: 120px;
+  background: -webkit-linear-gradient(yellow, gold);
+  position: relative;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /*transform-origin: 100px 100px;*/
+  /*-webkit-animation: flamebody 2s ease infinite; */
+}
+#flare1 {
+  width: 10px;
+  height: 30px;
+  background: -webkit-linear-gradient(rgba(0,0,0,0), gold);
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 0px;
+  left: 5px;
+  -webkit-animation: flare 1.5s ease 1s infinite;
+}
+#flare2 {
+  width: 10px;
+  height: 30px;
+  background: -webkit-linear-gradient(rgba(0,0,0,0), yellow);
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 40px;
+  left: 20px;
+  -webkit-animation: flare 1.5s ease 1.5s infinite;
+}
+#flare3 {
+  width: 10px;
+  height: 30px;
+  background: -webkit-linear-gradient(rgba(0,0,0,0), yellow);
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 70px;
+  left: 0px;
+  -webkit-animation: flare 1.5s ease 0.5s infinite;
+}
+.spark {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  position: absolute;
+  -webkit-animation: spark 1.2s ease infinite;
+}
+#spark1 {
+  top: 30px;
+  left: -20px;
+  background: yellow;
+}
+#spark2 {
+  top: 50px;
+  right: -15px;
+  background: white;
+  -webkit-animation-delay: 0.5s;
+}
+#spark3 {
+  top: 60px;
+  right: -30px;
+  background: yellow;
+  -webkit-animation-delay: 0.8s;
+}
+#spark4 {
+  top: 80px;
+  left: -10px;
+  background: white;
+  -webkit-animation-delay: 0.2s;
+}
+#spark5 {
+  top: 100px;
+  left: -30px;
+  background: yellow;
+  -webkit-animation-delay: 1s;
+}
+
+@-webkit-keyframes flamebody {
+  0% {height: 120px;}
+  50% {height: 140px;}
+  100% {height: 120px;}
+}
+
+@-webkit-keyframes flare {
+  0% {height: 30px;}
+  50% {height: 45px;}
+  100% {height: 30px;}
+}
+
+@-webkit-keyframes spark {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes flamefade {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/*********************************/
+
+.smoketrail {
+  width: 5px;
+  height: 190px;
+  background: -webkit-linear-gradient(white, rgba(0,0,0,0));
+  opacity: 0;
+  position: absolute;
+  bottom: -50px;
+  border-radius: 10px;
+}
+#smoketrail2 {
+  right: 0;
+}
+
+@-webkit-keyframes smokefadein {
+  0% {opacity: 0;}
+  100% {opacity: 0.5;}
+}
+
+@-webkit-keyframes smokefadeout {
+  0% {opacity: 0.5;}
+  100% {opacity: 0;}
+}
+.smoke {
+  background: white;
+  border-radius: 500px;
+  left: 50%;
+}
+
+#smoke1 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  margin-left: -50px;
+  /*animation: smoke1 1.5s ease;*/
+}
+
+#smoke2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  margin-left: -10px;
+}
+
+@-webkit-keyframes smoke1 {
+  0% {opacity: 1}
+  /*50% {opacity: 0;}*/
+  100% {opacity: 0;}
+}
+
+/*********************************/
+
+#land {
+  width: 100%;
+  height: 140px;
+  background: green;
+  position: absolute;
+  bottom: 0;
+  z-index: 25;
+}
+#launchpad {
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  background: lightgrey;
+  opacity: 0.7;
+  left: 50%;
+  margin-left: -160px;
+}
+.tree {
+  width: 40px;
+  height: 70px;
+  position: absolute;
+  top: -60px;
+  z-index: 20;
+}
+.treeleaves {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 50px 20px;
+  border-color: transparent transparent #8DB500 transparent;
+}
+.treetrunk {
+  width: 10px;
+  height: 20px;
+  margin-left: 15px;
+  background: -webkit-linear-gradient(saddlebrown, green);
+}
+#tree1 {
+  left: 7%;
+}
+#tree2 {
+  left: 22%;
+}
+#tree3 {
+  right: 30%;
+}
+#tree4 {
+  right: 10%;
+}
+#tree5 {
+  right: 5%;
+}
+
+/*********************************/
+
+@-webkit-keyframes shipspin {
+  0% {-webkit-transform: rotate(0deg); bottom: 215px;}
+  /*50% {opacity: 0;}*/
+  100% {-webkit-transform: rotate(360deg); bottom: 1000px;}
+}
+
+/*********************************/
+
+#clouds {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.cloud {
+  width: 200px;
+  height: 30px;
+  border-radius: 50px;
+  background: white;
+  opacity: 0.8;
+  position: absolute; 
+}
+#cloud1 {
+  left: 10%; top: 10%;
+}
+#cloud2 {
+  right: 10%; top: 20%;
+}
+#cloud3{
+  left: 30%; top: 25%;
+}
+#cloud4 {
+  left: 8%; top: 12%;
+}
+#cloud5 {
+  left: 10%; top: 60%;
+}
+#cloud6 {
+  right: 30%; top: 50%;
+}
+#cloud7 {
+  right: 24%; top: 52%;
+}
+
+/*********************************/
+
+#message {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: Muli, sans-serif;
+  left: 50%;
+  bottom: 200px;
+  -webkit-transform: translateX(-50%);
+  position: fixed;
+}
+.part1, .part2 {
+  opacity: 0;
+}
+
+@-webkit-keyframes textfade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
